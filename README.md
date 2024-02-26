@@ -1,9 +1,5 @@
 # Hellow Lonely Linux Users
 
-<p align="center">
-  <img width="460" height="300" src="./test.gif">
-</p>
-
 Featuring Ubuntu, especially version 18.04 or later.
 
 I couldn't work with the basic Bash shell, so it took me about three months to set up a terminal application, shell, editor, and theme settings that best fit my needs.
