@@ -26,14 +26,17 @@ This terminal app can maintain detailed settings and is free.
 
 **One of the most powerful features is that its settings are stored in a JSON file. Therefore, if you upload the repository, you just need to download it and then copy and paste**
 
-$\color{#D29922}\textsf{\Large\&#x26A0;\kern{0.2cm}\normalsize Warning}$ &nbsp; $\color{red}{\textsf{However, you must check the security information if you upload it to a public repository or project!}}$
+> [!CAUTION]
+> However, you must check the security information if you upload it to a public repository or project!
 
 I hope you create a great setting if you read this. To reference these settings.json, make your own unique Windows Terminal settings.
 
 **Check my essential shortcut setting**
-I designed shortcuts to reduce unnecessary actions for the hand using the keyboard and the other hand holding the mouse.
+> [!TIP]
+> I designed shortcuts to reduce unnecessary actions for the hand using the keyboard and the other hand holding the mouse.
+> 
+> You can overwrite my shortcut and theme settings by opening your terminal JSON file. (the default shortcut is ```Ctrl + Shift + ,)```
 
-You can overwrite my shortcut and theme settings by opening your terminal JSON file. (the default shortcut is ```Ctrl + Shift + ,)```
 ```
     "actions": 
     [
@@ -271,11 +274,12 @@ You can overwrite my shortcut and theme settings by opening your terminal JSON f
             "keys": "ctrl+alt+shift+up"
         }
 ```
+> [!NOTE]
+> You can fill or change the unbound action set according to your preference. feel free to do so.
+>
+> Don't hesitate to test it if you make changes. This is optimized for my body and keyboard desk structure.
 
-$\color{#58A6FF}\textsf{\Large\&#x24D8;\kern{0.2cm}\normalsize Note}$ &nbsp; You can fill or change the unbound action set according to your preference. feel free to do so.
-Don't hesitate to test it if you make changes. This is optimized for my body and keyboard desk structure.
-
-$\color{red}{\textsf{However, you must install the 'MesloLGS' font set for the p10k theme.}}$
+$\color{red}{\textsf{However, For next step, you must install the 'MesloLGS' font set for the p10k theme.}}$
 
 ```
    "profiles": 
@@ -302,8 +306,30 @@ $\color{red}{\textsf{However, you must install the 'MesloLGS' font set for the p
 ```
 When you set defaults like this, all profiles will follow the defaults unless you edit them. I use an absolute path to find the background image.
 
-$\color{#58A6FF}\textsf{\Large\&#x24D8;\kern{0.2cm}\normalsize Note}$ &nbsp; You can modify those options using the Terminal GUI. This is located in the 'Defaults' profile.
+> [!NOTE]
+> You can modify those options using the Terminal GUI. This is located in the 'Defaults' profile.
 
 ![image](https://github.com/HaruDorobou/ubuntuTerminalAndShellWorkset/assets/89964170/315be593-e0c0-4864-ab57-0ce6da07d570)
 
+# 2. Change main shell bash to zsh
+I use Zsh. That's all.
+```
+# Check the current shell
+echo $SHELL
 
+# Check if zsh is installed
+which zsh
+
+# Install zsh
+sudo apt-get install zsh -y
+
+```
+
+# 3. Install oh-my-zsh
+> https://ohmyz.sh/
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# or
+sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+```
