@@ -1,8 +1,8 @@
 # Hellow Lonely Linux Users
 
-<p align="center">
-  <img width="460" height="300" src="./test.gif">
-</p>
+<div align="center">
+  <img src="./cat.gif" width=300>
+</div>
 
 Featuring Ubuntu, especially version 18.04 or later.
 
