@@ -1,12 +1,9 @@
 # Hellow Lonely Linux Users
 
-<<<<<<< HEAD
-=======
 <div align="center">
   <img src="./cat.gif" width=300>
 </div>
 
->>>>>>> f8d6b84e7feebb589fec2f943f1c19756b41eb55
 Featuring Ubuntu, especially version 18.04 or later.
 
 I couldn't work with the basic Bash shell, so it took me about three months to set up a terminal application, shell, editor, and theme settings that best fit my needs.
