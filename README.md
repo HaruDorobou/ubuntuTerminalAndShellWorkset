@@ -365,10 +365,10 @@ echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> 
 
 $\Huge{\textsf{AutoJump}}$
 ```
-git clone git://github.com/wting/autojump.git
+sudo apt-get install autojump
 
-cd autojump
-./install.py or ./uninstall.py
+# in .zshrc
+plugins=(autojump)
 ```
 
 # 5. Install lsd
