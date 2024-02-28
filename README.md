@@ -430,11 +430,11 @@ $\Huge{\textsf{Result Sample}}$
 If you don't have enough time, just overwrite it.
 
 > [!CAUTION]
-> But you must check each VIM versions and plugins version. 
+> But you must check each Vim version and plugin version.
 
 For example, Vim supports a lot of plugins and functions, but supported plugins vary by Vim version.
 > [!NOTE]
-> In this guideline, this VIM is used.
+> In this guideline, this version of Vim is used.
 ```
 vim --version
 VIM - Vi IMproved 8.1 (2018 May 18, compiled Dec 07 2023 15:42:49)
