@@ -410,6 +410,7 @@ If you save your ```.zshrc``` profile, p10k configure will be initiated automati
 
 # 7. Install vim plugin - indentLine
 > https://github.com/Yggdroot/indentLine
+
 Especially if you use a lot of YAML manifests, this Vim plugin will be a great friend.
 ```
 git clone https://github.com/Yggdroot/indentLine.git ~/.vim/pack/vendor/start/indentLine
