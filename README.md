@@ -373,6 +373,7 @@ plugins=(autojump)
 
 # 5. Install lsd
 > https://github.com/lsd-rs/lsd
+
 ```lsd``` can enhance your terminal by decorating the devastated results of the ls command.
 Pretty icon, with Color!
 
