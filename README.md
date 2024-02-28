@@ -483,3 +483,10 @@ Huge version without GUI.  Features included (+) or not (-):
 Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H   -Wdate-time  -g -O2 -fdebug-prefix-map=/build/vim-6X01Ez/vim-8.1.2269=. -fstack-protector-strong -Wformat -Werror=format-security -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1
 Linking: gcc   -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -Wl,--as-needed -o vim        -lm -ltinfo -lnsl  -lselinux  -lcanberra -lacl -lattr -lgpm -ldl     -L/usr/lib/python3.8/config-3.8-x86_64-linux-gnu -lpython3.8 -lcrypt -lpthread -ldl -lutil -lm -lm
 ```
+
+# Etc. Automating the Entire Process
+I aim to automate the entire terminal setup except for installing Windows Terminal (at least, this part is up to you) by using just one shell script.
+However, coding and testing this script will be challenging.
+So, please be patient. I will create a cool script for terminal users.
+
+Thanks!
