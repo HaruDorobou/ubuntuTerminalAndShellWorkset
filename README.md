@@ -391,6 +391,15 @@ export PATH="$HOME/.cargo/bin:$PATH"
 cargo install lsd --locked
 ```
 
+ls -> lsd alias set
+```
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
+```
+
 # 6. Install p10k theme
 At first, you should install a special font set. If you do not, some icons may break.
 > https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k
@@ -412,6 +421,8 @@ If you save your ```.zshrc``` profile, p10k configure will be initiated automati
 > https://github.com/Yggdroot/indentLine
 
 Especially if you use a lot of YAML manifests, this Vim plugin will be a great friend.
+
+```.vimrc```
 ```
 git clone https://github.com/Yggdroot/indentLine.git ~/.vim/pack/vendor/start/indentLine
 vim -u NONE -c "helptags  ~/.vim/pack/vendor/start/indentLine/doc" -c "q"
@@ -486,7 +497,38 @@ Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H   -Wdate-time  -g -O2 -fdebug-pr
 Linking: gcc   -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -Wl,--as-needed -o vim        -lm -ltinfo -lnsl  -lselinux  -lcanberra -lacl -lattr -lgpm -ldl     -L/usr/lib/python3.8/config-3.8-x86_64-linux-gnu -lpython3.8 -lcrypt -lpthread -ldl -lutil -lm -lm
 ```
 
-# Etc. Automating the Entire Process
+# Etc 1
+at ```.zshrc```
+
+**Alias and Autocomplete**
+```
+[[ /usr/bin/kubectl ]] && source <(kubectl completion zsh)
+
+alias k=kubectl
+complete -F __start_kubectl k
+
+alias h=helm
+source <(helm completion zsh)
+fpath=(~/.zsh/completion $fpath)
+
+autoload -Uz compinit
+compinit
+```
+
+**LSD Color Modifying(Example)**
+```
+export LS_COLORS="di=36:$LS_COLORS"
+```
+
+**Autosuggestion Binding Edit(If you want)**
+```
+bindkey '^f ' autosuggest-accept
+bindkey '^q ' autosuggest-clear
+```
+
+
+
+# Etc 2 Automating the Entire Process
 I aim to automate the entire terminal setup except for installing Windows Terminal (at least, this part is up to you) by using just one shell script.
 However, coding and testing this script will be challenging.
 So, please be patient. I will create a cool script for terminal users.
