@@ -45,3 +45,6 @@ colo slate
 
 " Enable syntax highlighting
 syntax on
+
+" Ctrl + C noh
+nnoremap <nowait><silent> <C-C> :noh<CR>
